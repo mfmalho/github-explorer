@@ -1,0 +1,12 @@
+Repos
+<ul>
+{{#each model as |repo|}}
+  <li>
+   {{#link-to "users.repos.repo" repo}}
+      {{repo.name}}
+    {{/link-to}}
+  </li>
+{{/each}}
+</ul>
+
+{{outlet}}
